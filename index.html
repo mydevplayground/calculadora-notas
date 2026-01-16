@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Somar Notas</title>
+</head>
+<body>
+    <h1>CALCULADORA DE NOTAS</h1>
+    <div style="
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        ">
+        <label for="nota">Infome uma nota: </label>
+        <div style="display: flex; gap: 5px;">
+            <input type="number" id="nota" placeholder="0">
+            <button onclick="adicionarNota()">Adicionar Nota</button>
+            <Button onclick="calcularMedia()">Calcular Nota</Button>
+            <Button onclick="limparNotas()">Limpar Notas</Button>
+        </div>
+        <p>MÉDIA FINAL: <span id="media"></span></p>
+        <p>STATUS: <span id="status"></span></p>
+    </div>
+
+    <div>
+        <p>NOTAS:</p>
+        <ul id="lista">
+
+        </ul>
+    </div>
+</body>
+
+<script src="index.js"></script>
+
+</html>
